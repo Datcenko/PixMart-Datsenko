@@ -93,9 +93,6 @@ svg {
     line-height: 28px;
     position: relative;
     text-decoration: none;
-    color: #F5F8FB; 
-    background-color: #0265DC;
-    border: 2px solid #0265DC;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
@@ -105,23 +102,36 @@ svg {
     padding: 16px 30px;
     transition: color, background-color, border-color var(--transition);/*TODO: fix */
 }
-.btn:hover {
-    color: #0265DC; 
-    background-color: #F5F8FB;
-    border: 2px solid #0265DC;
-}
 .btn--small {
     padding: 7px 6px;
 }
 .btn--primary {
+    color: #F5F8FB; 
+    background-color: #0265DC;
+    border: 2px solid #0265DC;
+}
+.btn--primary:hover {
+    background-color: #3892F3;
+    border: 2px solid #3892F3;
+    color: #F5F8FB;
+}
+.btn--secondary {
     background-color: #fff;
     border-color: #fff;
     color: #0D0D15;
+}
+.btn--secondary:hover {
+    background-color: rgba(41, 77, 117, 0.09);
+    border: 2px solid #3892F3;
 }
 .btn--transparent {
     color: #0D0D15;
     background-color: transparent;
     border: 2px solid rgba(29, 54, 83, 0.17);
+}
+.btn--transparent:hover {
+    background-color: rgba(41, 77, 117, 0.09);
+    border: 2px solid rgba(41, 77, 117, 0.09);
 }
 .btn--icon-left {
     display: flex;
@@ -381,7 +391,8 @@ svg {
 }
 .btn—prev:hover,
 .btn—next:hover {
-    background-color: #0265DC;
+    background-color: rgba(41, 77, 117, 0.09);
+    border: 2px solid rgba(41, 77, 117, 0.09);
 }
 .btn—prev:hover::after,
 .btn—next:hover::after {
@@ -580,7 +591,7 @@ svg {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    background-image: radial-gradient(circle, #F0F6FD, #fff);
+    background-image: radial-gradient(#F0F6FD, #fff);
 }
 .faq-promo,
 .faq-info {
@@ -1003,6 +1014,8 @@ iframe {
     border-radius: 10px;
     color: rgba(42, 53, 65, 0.7);
     padding: 20px;
+    font-size: 16px;
+    line-height: 24px;
 }
 .form-control__textarea:hover {
     border: 2px solid #3892F3;
@@ -1118,35 +1131,3 @@ iframe {
 }
 
 
-/*my-checkbox*/
-.my-checkbox {
-    position: relative;
-    padding-left: 26px;
-}
-.my-checkbox::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    z-index: 2;
-    background-color: #fff;
-    border: 2px solid #ccc;
-}
-.my-checkbox::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 4px;
-    z-index: 3;
-    border: 2px solid #ccc;
-    border-width: 0 0 2px 2px;
-    transform: rotate(-45deg);
-    opacity: 0;
-}
-.checkbox__input:checked + .my-checkbox::before {
-    opacity: 1;
-}

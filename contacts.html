@@ -50,7 +50,7 @@
             <form class="search">
                 <input type="search" class="search__input" placeholder="Search for Digital Assets">
             </form>
-            <a href="#" class="btn btn--small">
+            <a href="#" class="btn btn--primary btn--small">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -74,7 +74,7 @@
                 <p class="contacts__text">
                     We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
                 </p>
-                <a href="#" class="btn">
+                <a href="#" class="btn btn--primary">
                     Shop Now
                 </a>
                 <div class="schedule">
@@ -155,27 +155,15 @@
                                 Subscribe me to Newsletter
                             </label>
                         </div>
-                        <div class="check">
-                            <input type="checkbox" id="ch" name="" class="input-hidden checkbox__input" name="clothing" value="combatant">
-                            <label for="ch" class="my-checkbox"> 
-                               Subscribe me to Newsletter
-                            </label>
-                        </div>
                         <div>
-
-                            <label class="form-checkbox">
+                            <label class="form-checkbox"> 
                                 <input type="checkbox" name="" class="input-hidden checkbox__input" name="clothing" value="combatant">
-                                <p class="checkbox__inner">  
-                                    <span class="checkbox__box">
-                                    </span>
-                                    <span class="checkbox__text">
-                                        I have read the User & Privacy Policy
-                                    </span>
-                                </p>
+                                <span class="custom-checkbox"></span>
+                                I have read the User & Privacy Policy
                             </label>
                         </div>
                     </div>
-                    <button class="btn" type="submit">Send Message</button>
+                    <button class="btn btn--primary" type="submit">Send Message</button>
                 </div>
             </form>
         </div>
@@ -344,21 +332,21 @@
                         </a>
                     </li>
                 </ul>
-                <div class="footer__bottom-tools">
+                <div class="footer__tools">
                     <p>
                         Subscribe to Design Newsletter
                     </p>
                     <form action="#" method="post" class="email-form">
-                        <label class="email-form__label" for="email">
-                        </label>
                         <input type="email" id="email" placeholder="Enter your email address ..." class="email-form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <button class="btn btn--primary" type="submit">
+                            Subscribe 
+                        </button>
                     </form>
-                    <a href="#" class="btn">Subscribe </a>
                 </div> 
             </div>
         </div>
-        <div class="footer-copyright container">
-
+        <div class="footer-copyright">
+            <div class="container">
                 <ul class="copyright__list">
                     <li class="copyright__item">
                         <a href="#" class="copyright__link">
@@ -379,7 +367,7 @@
                 <p>
                     Copyright © 2024 Pixmart. All rights reserved.
                 </p>
-
+            </div>
         </div>
     </footer>
 </body>
