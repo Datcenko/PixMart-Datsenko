@@ -149,8 +149,7 @@ svg {
     width: 100%;
 }
 .label {
-    border-radius: 50px;
-    padding: 6px 14px;
+    padding: 7px 15px;
     text-transform: uppercase;
 }
 .label--blue {
@@ -905,13 +904,14 @@ details[open] summary::after {
 }
 .contacts {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 40px;
-    padding-top: 65px;
-    margin-bottom: 128px;
+    padding-top: 25px;
+    margin-bottom: 122px;
 }
 .contacts__info {
     flex: 1 0 618px;
+    padding-top: 40px;
 }
 .contacts__info .title-block {
     margin-bottom: 16px;
@@ -991,7 +991,7 @@ iframe {
     flex: 1 0 622px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 23px;
     background-color: var(--color-white);
     box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
     border-radius: var(--radius);
@@ -999,11 +999,12 @@ iframe {
     font-size: 14px;
     line-height: 20px;
     color: var(--color-dark);
+    margin-top: 172px;
 }
 .form-control {
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 5px;
 }
 .form-control__label {
     cursor: pointer;
@@ -1053,18 +1054,18 @@ iframe {
 .form-group {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .form-group label {
     margin-bottom: 5px;
 }
 select {
-    position: relative;
     appearance: none; 
     -webkit-appearance: none; 
     -moz-appearance: none; 
     width: 100%; 
     height: 64px;
-    padding: 20px 12px;
+    padding: 20px 20px;
     border: 1px solid rgba(208, 215, 251, 0.7);
     border-radius: 10px;
     cursor: pointer;
@@ -1075,13 +1076,13 @@ select {
 .catalog-select {
     width: 156px;
 }
-select::after {
+.form-group::after {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 0;
-    right: 0;
+    width: 18px;
+    height: 18px;
+    top: 47px;
+    right: 19px;
     background-image: url(images/chevron-down.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1117,15 +1118,16 @@ select:focus {
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
     align-items: flex-end;
 }
 .info-block {
-    padding-top: 64px;
-    margin-bottom: 64px;
+    padding-top: 66px;
+    margin-bottom: 47px;
 }
 .info-block .title-block{
-   margin-bottom: 64px;
+   margin-bottom: 67px;
 }
 .info-block__label {
     display: inline-block;
@@ -1136,7 +1138,7 @@ select:focus {
 }
 .info-block .blog__img {
     background-color: var(--color-blue);
-    padding: 64px 118px;
+    padding: 71px 118px 55px;
 }
 .wrapper {
     display: flex;
@@ -1153,10 +1155,15 @@ select:focus {
 .autor__photo {
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
 }
 .autor__info {
     font-size: 16px;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
 }
 .autor__title {
     display: block;
@@ -1167,14 +1174,13 @@ select:focus {
     font-size: 16px;
     line-height: 24px;
     color: rgba(42, 53, 65, 0.85);
-    padding-top: 40px;
-    padding: 40px 0;
+    padding: 37px 0;
     border-top: 2px solid var(--color-dark);
 }
 .sidebar__title {
     font: 700 24px/32px var(--font-secondary);
     color: var(--color-dark);
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     display: block;
 }
 .sidebar__list {
@@ -1365,9 +1371,9 @@ select:focus {
 .form-checkbox {
     cursor: pointer;
     display: flex;
-    gap: 5px;
+    gap: 9px;
     width: fit-content;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 .input-hidden {
     position: absolute;
