@@ -151,6 +151,7 @@ svg {
 .label {
     padding: 7px 15px;
     text-transform: uppercase;
+    border-radius: 50px;
 }
 .label--blue {
     background-color: var(--color-blue);
@@ -685,7 +686,7 @@ details[open] summary::after {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 47px;
+    margin-bottom: 32px;
 }
 .blog__title .section-subtitle {
     margin-bottom: 0;
@@ -696,7 +697,7 @@ details[open] summary::after {
     line-height: 24px;
     color: var(--color-blue);
     text-decoration: none;
-    padding-top: 11px;
+    padding-top: 21px;
     padding-right: 31px;
     transition: opacity var(--transition);
 }
@@ -706,8 +707,8 @@ details[open] summary::after {
 .blog__link::after {
     position: absolute;
     content: url(images/chevron-right-blue.svg);
-    top: 13px;
-    right: 0;
+    top: 23px;
+    right: 4px;
     width: 16px;
     height: 16px;
     z-index: 2;
@@ -1174,13 +1175,13 @@ select:focus {
     font-size: 16px;
     line-height: 24px;
     color: rgba(42, 53, 65, 0.85);
-    padding: 37px 0;
+    padding: 37px 0 32px;
     border-top: 2px solid var(--color-dark);
 }
 .sidebar__title {
     font: 700 24px/32px var(--font-secondary);
     color: var(--color-dark);
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     display: block;
 }
 .sidebar__list {
@@ -1210,6 +1211,9 @@ select:focus {
     left: 0;
     z-index: 2;
 }
+.sidebar__sublist {
+    padding: 8px 0 0;
+}
 .sidebar__box--link {
     text-decoration: none;
     font: 700 20px/26px var(--font-secondary);
@@ -1221,7 +1225,7 @@ select:focus {
     color: var(--color-blue);
 }
 .sidebar__inner {
-    padding-bottom: 24px;
+    padding-bottom: 50px;
 }
 .sidebar__inner:first-child {
    border-bottom: 1px solid rgba(34, 34, 34, 0.15);
@@ -1229,9 +1233,15 @@ select:focus {
 .product-catalog {
     flex: 1 0 1039px;
 }
+.post {
+    margin-bottom: 100px;
+}
 .post p,
 .post__item p {
     margin: 0 0 32px;
+}
+.post__item .post__item-text {
+    margin-bottom: 40px;
 }
 .post__list {
     list-style: none;
@@ -1254,7 +1264,7 @@ select:focus {
     content: counter(muffins) ". ";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
     z-index: 2;
     font: 700 24px/32px var(--font-secondary);
     color: var(--color-dark);
@@ -1265,8 +1275,8 @@ select:focus {
 .post__item-label {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    margin-bottom: 32px;
+    padding-top: 15px;
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 24px;
     color: #222222;
@@ -1281,7 +1291,7 @@ select:focus {
     color: var(--color-dark);
     position: relative;
     padding-left: 80px;
-    margin: 0 0 32px;
+    margin: 0 0 31px;
 }
 .post__blockquote::before {
     position: absolute;
@@ -1290,7 +1300,7 @@ select:focus {
     left: 0;
     width: 47px;
     height: 36px;
-    padding: 13px 8px;
+    padding: 5px 8px;
     z-index: 2;
 }
 .truncated-text {
@@ -1301,7 +1311,8 @@ select:focus {
 }
 .post__articles {
     background-color: #F0F6FD;
-    padding-bottom: 40px;
+    padding: 40px 0 40px;
+    margin-bottom: 120px;
 }
 .articles-wrapper {
     display: flex;
@@ -1325,18 +1336,20 @@ select:focus {
 .articles-card__label {
     position: absolute;
     z-index: 2;
-    bottom: 99px;
-    left: 40px;
+    bottom: 94px;
+    left: 37px;
 }
 .articles-card__title {
     display: block;
     font: 700 20px/26px var(--font-secondary);
     color: var(--color-dark);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     text-transform: capitalize;
+    padding-left: 16px;
 }
 .articles-card .blog__date {
     color: rgba(42, 53, 65, 0.85);
+    padding-left: 16px;
 }
 .catalog-info {
     background-image: linear-gradient(to bottom, var(--color-white) , #D5DEE5);
