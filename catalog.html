@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="nomalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -226,19 +226,33 @@
                             </label>
                         </div>
                     </div>
-                    <div class="filter-box">
+                    <div class="filter-box filter-box__range">
                         <strong class="filter-box__title">
                             Price
                         </strong>
-                        
+                        <div class="range">
+                            <div class="range-slider">
+                                <div class="range-fill"></div>
+                                <input type="range" value="5" min="0" max="70" step="5">
+                                <input type="range" value="50" min="0" max="70" step="5">
+                            </div>
+                            <div class="range-content">
+                                <span class="min-value">
+                                    €5
+                                </span>
+                                <span class="max-value">
+                                    €50
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn--transparent filter-btn">
-                        <svg width="12" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="14" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13.5 1L1.5 13M1.5 1L13.5 13" stroke="#0D0D15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         Clear all filters
                     </button> 
-            </form>
+                </form>
             </aside>
             <div class="product-catalog">
                 <div class="header-catalog">
@@ -874,5 +888,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
