@@ -427,10 +427,10 @@ svg {
     height: 24px;
 }
 .btn-prev::after {
-    content: url(images/chevron-left.svg);
+    content: url(../images/chevron-left.svg);
 }
 .btn-next::after {
-    content: url(images/chevron-right.svg);
+    content: url(../images/chevron-right.svg);
 }
 .btn-prev.swiper-button-disabled,
 .btn-next.swiper-button-disabled {
@@ -452,11 +452,10 @@ svg {
 }
 .catalog-card__link {
     text-decoration: none;
-    transition: opacity color .5s ease;
+    transition: opacity .5s ease;
 }
 .catalog-card__link:hover {
     opacity: 0.8;
-    color: var(--color-blue);
 }
 .catalog-card__image {
     position: relative;
@@ -487,6 +486,10 @@ svg {
     font: 28px/36px var(--font-secondary);
     font-weight: 700;
     color: var(--color-dark);
+    transition: color 0.5s ease;
+}
+.catalog-card__link:hover .catalog-card__title {
+    color: var(--color-blue);
 }
 .catalog-card__price {
     display: block;
@@ -522,6 +525,10 @@ svg {
     font-size: 16px;
     line-height: 24px;
     color: rgba(42, 53, 65, 0.85);
+    transition: color 0.5s ease;
+}
+.catalog-card__link:hover .breadcrumbs {
+    color: #3892F3;
 }
 .breadcrumbs li {
     position: relative;
@@ -536,6 +543,10 @@ svg {
     border-radius: 100%;
     background-color: rgba(42, 53, 65, 0.7);
     z-index: 2;
+    transition: background-color 0.5s ease;
+}
+.catalog-card__link:hover .breadcrumbs li::after {
+    background-color: #3892F3;
 }
 .breadcrumbs li:first-child::after {
     display: none;
@@ -625,7 +636,7 @@ svg {
     width: 16px;
     height: 16px;
     z-index: 2;
-    background-image: url(images/check-list.svg);
+    background-image: url(../images/check-list.svg);
 }
 .faq {
     margin-bottom: 105px;
@@ -672,7 +683,7 @@ summary::after {
     z-index: 2;
     width: 28px;
     height: 28px;
-    background-image: url(images/chevron-down.svg);
+    background-image: url(../images/chevron-down.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid rgba(29, 54, 83, 0.17);
@@ -683,7 +694,7 @@ details[open] {
 }
 details[open] summary::after {
     content: "";
-    background-image: url(images/chevron-up.svg);
+    background-image: url(../images/chevron-up.svg);
     background-repeat: no-repeat;
 }
 .faq-info__text {
@@ -730,7 +741,7 @@ details[open] summary::after {
 }
 .blog__link::after {
     position: absolute;
-    content: url(images/chevron-right-blue.svg);
+    content: url(../images/chevron-right-blue.svg);
     top: 19px;
     right: 4px;
     width: 16px;
@@ -1106,7 +1117,7 @@ select {
     font-size: 16px;
     line-height: 24px;
     color: var(--color-dark);
-    background-image: url(images/chevron-down.svg);
+    background-image: url(../images/chevron-down.svg);
     background-size: 18px;
     background-repeat: no-repeat;
     background-position: top 22px right 19px;
@@ -1335,7 +1346,7 @@ select:focus {
 }
 .post__blockquote::before {
     position: absolute;
-    content: url(images/Vector.svg);
+    content: url(../images/blockquote.svg);
     top: 0;
     left: 0;
     width: 47px;
@@ -1400,7 +1411,7 @@ select:focus {
 .catalog-info::before {
     position: absolute;
     content: "";
-    background-image: url(images/wave.webp);
+    background-image: url(../images/wave.webp);
     background-repeat: repeat-x;
     bottom: 0;
     left: 0;
@@ -1463,7 +1474,7 @@ select:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(images/check.svg) no-repeat 2px center;
+    background: url(../images/check.svg) no-repeat 2px center;
     background-size: 9px 7px;
     opacity: 0;
     transition: opacity .2s ease;

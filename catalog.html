@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixmart</title>
+    <title>Catalog page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/nomalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -76,7 +76,7 @@
         </div>
         <div class="wrapper container">
             <aside class="sidebar">
-                <form action="" class="form-catalog">
+                <form class="form-catalog">
                     <div class="filter-box">
                         <strong class="filter-box__title">
                             Categories
@@ -91,14 +91,14 @@
                             </div>
                             <div>
                                 <label class="form-checkbox form-checkbox--disabled"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="technology" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="technology" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Technology
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" disabled checked name="" class="input-hidden checkbox__input" required name="travel" value="categories">
+                                    <input type="checkbox" disabled checked class="input-hidden checkbox__input" required name="travel" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Travel & Tourism
                                 </label>
@@ -258,7 +258,7 @@
             <div class="product-catalog">
                 <div class="header-catalog">
                     <div class="form-group__catalog">
-                        <select class="catalog-select" name="filter" id="best" form="filter-form" required>
+                        <select class="catalog-select" name="filter" id="best" required>
                             <option disabled value="" selected>Best Seller</option>
                             <option value="general">New</option>
                             <option value="general">Popular</option>
@@ -362,23 +362,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/skyHomes.webp" width="325" height="260" alt="modern website landing page design for a real estate service or company called SkyHomes">
-                            <span class="label label--blue label--catalog">
-                                POPULAR 
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Dream Homes
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Real Estate
-                            </li>
-                            <li>
-                                Modern
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/skyHomes.webp" width="325" height="260" alt="modern website landing page design for a real estate service or company called SkyHomes">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Dream Homes
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Real Estate
+                                </li>
+                                <li>
+                                    Modern
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €45.99
@@ -398,23 +400,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/foodish.webp " width="325" height="260" alt="a modern website design for a catering service called Foodish">
-                            <span class="label label--blue label--catalog">
-                                POPULAR 
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Foodish Catering
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Food
-                            </li>
-                            <li>
-                                Events
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/foodish.webp " width="325" height="260" alt="a modern website design for a catering service called Foodish">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Foodish Catering
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Food
+                                </li>
+                                <li>
+                                    Events
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €15.99
@@ -434,23 +438,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/mediCare.webp" width="325" height="260" alt="modern website landing page design for a medical company called MediCare">
-                            <span class="label label--secondary label--catalog">
-                                new
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Caring Hearts
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Healthcare
-                            </li>
-                            <li>
-                                Support
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/mediCare.webp" width="325" height="260" alt="modern website landing page design for a medical company called MediCare">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Caring Hearts
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Healthcare
+                                </li>
+                                <li>
+                                    Support
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €19.99
@@ -514,23 +520,25 @@
                         </span>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/withCash.webp" width="325" height="260" alt="">
-                            <span class="label label--secondary label--catalog">
-                                new
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Banking Redefined
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Finance
-                            </li>
-                            <li>
-                                Secure
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/withCash.webp" width="325" height="260" alt="">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Banking Redefined
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Finance
+                                </li>
+                                <li>
+                                    Secure
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €25.99
@@ -550,23 +558,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/journeey.webp " width="325" height="260" alt="modern landing page design for a travel company called Journey">
-                            <span class="label label--blue label--catalog">
-                                POPULAR 
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Exploring Fun
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Travel
-                            </li>
-                            <li>
-                                Adventure
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/journeey.webp " width="325" height="260" alt="modern landing page design for a travel company called Journey">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Exploring Fun
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Travel
+                                </li>
+                                <li>
+                                    Adventure
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €41.99
@@ -586,23 +596,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/ezMart.webp " width="325" height="260" alt="Admin Dashboard with tools and data">
-                            <span class="label label--blue label--catalog">
-                                POPULAR 
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Admin Dashboard
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Data
-                            </li>
-                            <li>
-                                Tools
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/ezMart.webp " width="325" height="260" alt="Admin Dashboard with tools and data">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Admin Dashboard
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Data
+                                </li>
+                                <li>
+                                    Tools
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €15.99
@@ -622,23 +634,25 @@
                         </div>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/schoolHub.webp" width="325" height="260" alt="Analytical Dashboard school Hub">
-                            <span class="label label--secondary label--catalog">
-                                new
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Analytical Dashboard
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Data
-                            </li>
-                            <li>
-                                Tools
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/schoolHub.webp" width="325" height="260" alt="Analytical Dashboard school Hub">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Analytical Dashboard
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Data
+                                </li>
+                                <li>
+                                    Tools
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €10.99
@@ -693,9 +707,9 @@
         <div class="footer-wrapper container">
             <div class="footer__top">
                 <div class="footer__content">
-                    <strong class="footer__logo">
+                    <a href="index.html" class="footer__logo">
                         <img src="images/logo-big.svg" width="300" height="58" alt="Pixmart.">
-                    </strong>
+                    </a>
                     <p>
                         Your premium digital assets solution with high quality and comprehensive range of products and services.
                     </p>
