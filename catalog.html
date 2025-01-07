@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nomalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header container">
@@ -23,7 +24,7 @@
                             About
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item active">
                         <a href="#" class="nav__link">
                             Products
                         </a>
@@ -104,42 +105,42 @@
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="health" value="categories">
+                                    <input type="checkbox" checked class="input-hidden checkbox__input" name="health" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Health & Fitness
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="e-commerce" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="e-commerce" value="categories">
                                     <span class="custom-checkbox"></span>
                                     E-Commerce
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="education" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="education" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Education
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="entertainment" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="entertainment" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Entertainment
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="others" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="others" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Others
                                 </label>
                             </div>
                             <div>
                                 <label class="form-checkbox"> 
-                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="others" value="categories">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="others" value="categories">
                                     <span class="custom-checkbox"></span>
                                     Others
                                 </label>
@@ -323,23 +324,25 @@
                         </span>
                     </div>
                     <div class="catalog-card">
-                        <div class="catalog-card__img">
-                            <img src="images/catalog/jobBlitz.webp" width="325" height="260" alt="a web page of a company that is engaged in job search and is called jobBlitz">
-                            <span class="label label--secondary label--catalog">
-                                new
-                            </span>
-                        </div>
-                        <strong class="catalog-card__title">
-                            Career Success
-                        </strong>
-                        <ul class="breadcrumbs">
-                            <li>
-                                Guidance
-                            </li>
-                            <li>
-                                Jobs
-                            </li>
-                        </ul>
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/jobBlitz.webp" width="325" height="260" alt="a web page of a company that is engaged in job search and is called jobBlitz">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Career Success
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Guidance
+                                </li>
+                                <li>
+                                    Jobs
+                                </li>
+                            </ul>
+                        </a>
                         <div class="catalog-card__box">
                             <span class="catalog-card__prices">
                                 €20.99
@@ -888,6 +891,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

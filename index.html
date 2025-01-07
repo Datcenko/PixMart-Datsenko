@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nomalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header container">
@@ -18,7 +19,7 @@
             </h1>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item">
+                    <li class="nav__item active">
                         <a href="#" class="nav__link">
                             About
                         </a>
@@ -370,133 +371,193 @@
                 Popular Products
             </h3>
             <div class="gatalog-gallery">
-                <button class="btn—prev">
+                <button class="btn-prev">
                     <span class="accessibility">
                         Prev
                     </span>
                 </button>
-                <button class="btn—next">
+                <button class="btn-next">
                     <span class="accessibility"> 
                         Next
                     </span>
                 </button>
-                <div class="catalog__list">
-                    <article class="catalog-card">
-                        <div class="catalog-card__image">
-                            <img src="images/exploring.webp" width="305" height="272" alt="modern landing page design for a travel company called Journey">
-                            <span class="catalog-card__label">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div class="catalog-card__overlay">
-                                <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                <div class="swiper">
+                    <div class="catalog__list swiper-wrapper">
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/exploring.webp" width="305" height="272" alt="modern landing page design for a travel company called Journey">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="catalog-card__item">
-                            <strong class="catalog-card__title">
-                                Travel Hero
-                            </strong>
-                            <span class="catalog-card__price">
-                                €29.99
-                            </span>
-                        </div> 
-                        <ul class="breadcrumbs">
-                            <li>
-                                Adventure
-                            </li>
-                            <li>
-                                Journey
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="catalog-card">
-                        <div class="catalog-card__image">
-                            <img src="images/medicare.webp" width="305" height="272" alt="modern website landing page design for a medical company called MediCare">
-                            <span class="catalog-card__label">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div class="catalog-card__overlay">
-                                <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Travel Hero
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €29.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Adventure
+                                </li>
+                                <li>
+                                    Journey
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/medicare.webp" width="305" height="272" alt="modern website landing page design for a medical company called MediCare">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="catalog-card__item">
-                            <strong class="catalog-card__title">
-                                Healthcare Pro
-                            </strong>
-                            <span class="catalog-card__price">
-                                €15.99
-                            </span>
-                        </div> 
-                        <ul class="breadcrumbs">
-                            <li>
-                                Medical
-                            </li>
-                            <li>
-                                Wellness
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="catalog-card">
-                        <div class="catalog-card__image">
-                            <img src="images/foodish.webp" width="305" height="272" alt="a modern website design for a catering service called Foodish">
-                            <span class="catalog-card__label">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div class="catalog-card__overlay">
-                                <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Healthcare Pro
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €15.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Medical
+                                </li>
+                                <li>
+                                    Wellness
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/foodish.webp" width="305" height="272" alt="a modern website design for a catering service called Foodish">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="catalog-card__item">
-                            <strong class="catalog-card__title">
-                                Foodish Delight
-                            </strong>
-                            <span class="catalog-card__price">
-                                €31.99
-                            </span>
-                        </div> 
-                        <ul class="breadcrumbs">
-                            <li>
-                                Catering
-                            </li>
-                            <li>
-                                Food
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="catalog-card">
-                        <div class="catalog-card__image">
-                            <img src="images/skyhomes.webp" width="305" height="272" alt="modern website landing page design for a real estate service or company called SkyHomes">
-                            <span class="catalog-card__label">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <div class="catalog-card__overlay">
-                                <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Foodish Delight
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €31.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Catering
+                                </li>
+                                <li>
+                                    Food
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/skyhomes.webp" width="305" height="272" alt="modern website landing page design for a real estate service or company called SkyHomes">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="catalog-card__item">
-                            <strong class="catalog-card__title">
-                                Real Estate
-                            </strong>
-                            <span class="catalog-card__price">
-                                €40.99
-                            </span>
-                        </div> 
-                        <ul class="breadcrumbs">
-                            <li>
-                                Modern
-                            </li>
-                            <li>
-                                Homes
-                            </li>
-                        </ul>
-                    </article>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Real Estate
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €40.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Modern
+                                </li>
+                                <li>
+                                    Homes
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/medicare.webp" width="305" height="272" alt="modern website landing page design for a medical company called MediCare">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
+                            </div>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Healthcare Pro
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €15.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Medical
+                                </li>
+                                <li>
+                                    Wellness
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="catalog-card swiper-slide">
+                            <div class="catalog-card__image">
+                                <img src="images/foodish.webp" width="305" height="272" alt="a modern website design for a catering service called Foodish">
+                                <span class="catalog-card__label">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="catalog-card__overlay">
+                                    <button type="button" class="btn btn--primary btn--full">Go to product</button>
+                                </div>
+                            </div>
+                            <div class="catalog-card__item">
+                                <strong class="catalog-card__title">
+                                    Foodish Delight
+                                </strong>
+                                <span class="catalog-card__price">
+                                    €31.99
+                                </span>
+                            </div> 
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Catering
+                                </li>
+                                <li>
+                                    Food
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -663,46 +724,52 @@
             </div>
             <div class="blog__list">
                 <article class="blog__item blog__item--big">
-                    <div class="blog__img">
-                        <span class="label label--blue blog__label">
-                            TAG
-                        </span> 
-                        <img src="images/blog.webp" width="624" height="702" alt="our blog website Binabox">
-                    </div>
-                    <strong class="blog__header">
-                        Creative Blog
-                    </strong>
-                    <time datetime="2024-04-15" class="blog__date">
-                        15 APRIL 2024
-                    </time>
+                    <a href="#" class="blog__item--link">
+                        <div class="blog__img">
+                            <span class="label label--blue blog__label">
+                                TAG
+                            </span> 
+                            <img src="images/blog.webp" width="624" height="702" alt="our blog website Binabox">
+                        </div>
+                        <strong class="blog__header">
+                            Creative Blog
+                        </strong>
+                        <time datetime="2024-04-15" class="blog__date">
+                            15 APRIL 2024
+                        </time>
+                    </a>
                 </article>
                 <article class="blog__item">
-                    <div class="blog__img blog__img-small">
-                        <span class="label label--blue blog__label">
-                            TAG
-                        </span> 
-                        <img src="images/dishes-2.webp" width="624" height="289" alt="restaurant web page with menu">
-                    </div>
-                    <strong class="blog__header">
-                        Best Dishes
-                    </strong>
-                    <time datetime="2024-05-05" class="blog__date">
-                        5 MAY 2024
-                    </time>
+                    <a href="#" class="blog__item--link">
+                        <div class="blog__img blog__img-small">
+                            <span class="label label--blue blog__label">
+                                TAG
+                            </span> 
+                            <img src="images/dishes-2.webp" width="624" height="289" alt="restaurant web page with menu">
+                        </div>
+                        <strong class="blog__header">
+                            Best Dishes
+                        </strong>
+                        <time datetime="2024-05-05" class="blog__date">
+                            5 MAY 2024
+                        </time>
+                    </a>
                 </article>
                 <article class="blog__item">
-                    <div class="blog__img blog__img-small">
-                        <span class="label label--blue blog__label">
-                            TAG
-                        </span> 
-                        <img src="images/contacts-2.webp" width="624" height="289" alt="LotusSpa company website with contacts">
-                    </div>
-                    <strong class="blog__header">
-                        contact us
-                    </strong>
-                    <time datetime="2024-06-10" class="blog__date">
-                        10 JUNE 2024
-                    </time>
+                    <a href="#" class="blog__item--link">
+                        <div class="blog__img blog__img-small">
+                            <span class="label label--blue blog__label">
+                                TAG
+                            </span> 
+                            <img src="images/contacts-2.webp" width="624" height="289" alt="LotusSpa company website with contacts">
+                        </div>
+                        <strong class="blog__header">
+                            contact us
+                        </strong>
+                        <time datetime="2024-06-10" class="blog__date">
+                            10 JUNE 2024
+                        </time>
+                    </a>
                 </article>
             </div>
         </section>
@@ -909,5 +976,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
