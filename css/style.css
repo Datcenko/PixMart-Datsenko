@@ -6,8 +6,8 @@
     --color-dark: #0d0d15;
     --color-blue: #0265dc;
     --color-light-blue: #3892f3;   
-    --color-grey: rgba(42, 53, 65, 0.7); 
-    --color-light-grey: rgba(29, 54, 83, 0.17);
+    --color-grey: #2a3541b3; 
+    --color-light-grey: #1d36532b;
     --transition: 0.2s linear;
     --transition-alt: 0.5s ease;
     --radius: 20px;
@@ -545,7 +545,8 @@ svg {
 }
 .breadcrumbs {
     display: flex;
-    gap: 21px;
+    flex-wrap: wrap;
+    gap: 5px 21px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1841,6 +1842,9 @@ input[type="range"]::-webkit-slider-thumb {
     padding-top: 7px;
     color: var(--color-dark);
     font: 700 20px/26px var(--font-secondary);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .catalog__btn {
     display: flex;
