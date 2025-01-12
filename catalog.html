@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources">
+    <meta name="keywords" content="Digital Assets, design resources, UI/UX kits, Presentation, fonts, ullustrations, templates, Slides, mobile App, product mockups, websites, social media">
+    <title>Pixmart Catalog page</title>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nomalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__wrapper">
+            <a href="index.html" class="logo">
+                <img src="images/icons/logo-small.svg" width="107" height="24" alt="Pixmart." >  
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item active">
+                        <a href="#" class="nav__link">
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Creators
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tools">
+            <form class="search">
+                <label for="gsearch"></label>
+                <input type="search" class="search__input" id="gsearch" placeholder="Search for Digital Assets">
+            </form>
+            <a href="#" class="btn btn--primary btn--small">
+                <svg class="icon" width="24" height="24">
+                    <use href="images/sprite.svg#shopping-bag"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="catalog-info">
+            <div class="container">
+                <h1 class="title-block">
+                    <strong class="is-block">
+                        Explore Top
+                    </strong>
+                    <strong class="is-block">
+                        <span class="mark">UI Kits</span> Design Assets
+                    </strong>
+                </h1>
+            </div>
+        </section>
+        <div class="wrapper container">
+            <aside class="sidebar">
+                <form class="form-catalog">
+                    <div class="filter-box">
+                        <strong class="filter-box__title">
+                            Categories
+                        </strong>
+                        <div class="filter-box__info">
+                            <label class="form-checkbox"> 
+                                <input disabled type="checkbox" class="input-hidden checkbox__input" name="all categories" value="categories">
+                                <span class="custom-checkbox"></span>
+                                All Categories
+                            </label>
+                            <label class="form-checkbox form-checkbox--disabled"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="technology" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Technology
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" disabled checked class="input-hidden checkbox__input" required name="travel" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Travel & Tourism
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" checked class="input-hidden checkbox__input" name="health" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Health & Fitness
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="e-commerce" value="categories">
+                                <span class="custom-checkbox"></span>
+                                E-Commerce
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="education" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Education
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="entertainment" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Entertainment
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="others" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Others
+                            </label>
+                            <label class="form-checkbox"> 
+                                <input type="checkbox" class="input-hidden checkbox__input" name="others" value="categories">
+                                <span class="custom-checkbox"></span>
+                                Others
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <strong class="filter-box__title">
+                            Format Type
+                        </strong>
+                        <div class="filter-box__info">
+                            <label class="form-radio">
+                                <input type="radio" class="input-hidden" value="figma" checked name="format">
+                                <span class="custom-radio"></span>
+                                Figma
+                            </label>
+                            <label class="form-radio form-radio--disabled">
+                                <input type="radio" disabled class="input-hidden" value="sketch" name="format">
+                                <span class="custom-radio"></span>
+                                Sketch
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" required class="input-hidden" value="adobe XD" name="format">
+                                <span class="custom-radio"></span>
+                                Adobe XD
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" class="input-hidden" value="adobe photoshop" name="format">
+                                <span class="custom-radio"></span>
+                                Adobe Photoshop
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" class="input-hidden" value="adobe illustration" name="format">
+                                <span class="custom-radio"></span>
+                                Adobe Illustration
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <strong class="filter-box__title">
+                            Style
+                        </strong>
+                        <div class="filter-box__info">
+                            <label class="form-switcher">
+                                <input type="checkbox" class="form-switcher__input input-hidden" name="minimalist" value="style">
+                                <span class="custom-switcher"></span>
+                                Minimalist
+                            </label>
+                            <label class="form-switcher">
+                                <input type="checkbox" class="form-switcher__input input-hidden" name="modern" value="style">
+                                <span class="custom-switcher"></span>
+                                Modern
+                            </label>
+                            <label class="form-switcher">
+                                <input type="checkbox" class="form-switcher__input input-hidden" name="playful" value="style">
+                                <span class="custom-switcher"></span>
+                                Playful
+                            </label>
+                            <label class="form-switcher">
+                                <input type="checkbox" disabled class="form-switcher__input input-hidden" name="dark mode" value="style">
+                                <span class="custom-switcher"></span>
+                                Dark Mode
+                            </label>
+                            <label class="form-switcher">
+                                <input type="checkbox" class="form-switcher__input input-hidden" name="photocentric" value="style">
+                                <span class="custom-switcher"></span>
+                                Photocentric
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-box filter-box__range">
+                        <strong class="filter-box__title">
+                            Price
+                        </strong>
+                        <div class="range">
+                            <div class="range-slider">
+                                <div class="range-fill"></div>
+                                <input type="range" value="5" min="0" max="70" step="5">
+                                <input type="range" value="50" min="0" max="70" step="5">
+                            </div>
+                            <div class="range-content">
+                                <span class="min-value">
+                                    €5
+                                </span>
+                                <span class="max-value">
+                                    €50
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--transparent filter-btn">
+                        <svg class="icon" width="14" height="14">
+                            <use href="images/sprite.svg#clean"></use>
+                        </svg>
+                        Clear all filters
+                    </button> 
+                </form>
+            </aside>
+            <section class="product-catalog">
+                <div class="header-catalog">
+                    <select class="catalog-select" name="filter" id="best" required>
+                        <option disabled value="" selected>Best Seller</option>
+                        <option value="general">New</option>
+                        <option value="general">Popular</option>
+                    </select>
+                    <div class="header-catalog__right">
+                        <p>
+                            Showing 12 out of 120 results.
+                        </p>
+                        <button class="btn btn--primary" type="button">
+                            <svg class="icon" width="24" height="24">
+                                <use href="images/sprite.svg#filter"></use>
+                            </svg>
+                        </button>
+                        <button class="btn btn--transparent" type="button">
+                            <svg class="icon" width="24" height="24">
+                                <use href="images/sprite.svg#list"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="filters">
+                    <button class="btn btn--transparent filter-btn" type="button">
+                        UI Kit
+                        <svg class="icon" width="16" height="16">
+                            <use href="images/sprite.svg#clean-small"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--transparent filter-btn" type="button">
+                        UI Kit
+                        <svg class="icon" width="16" height="16">
+                            <use href="images/sprite.svg#clean-small"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="list-catalog">
+                    <article class="catalog-card catalog-card--disabled">
+                        <div class="catalog-card__img">
+                            <img src="images/catalog/james.webp" width="325" height="260" alt="web page of a company that deals with photography and creativity called James">
+                            <span class="label label--primary label--catalog">
+                                sold out
+                            </span>
+                        </div>
+                        <strong class="catalog-card__title">
+                            Lens Chronicles
+                        </strong>
+                        <ul class="breadcrumbs">
+                            <li>
+                                Photography
+                            </li>
+                            <li>
+                                Creative
+                            </li>
+                        </ul>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €00.00 
+                            </span>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/jobBlitz.webp" width="325" height="260" alt="a web page of a company that is engaged in job search and is called jobBlitz">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Career Success
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Guidance
+                                </li>
+                                <li>
+                                    Jobs
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €20.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/skyHomes.webp" width="325" height="260" alt="modern website landing page design for a real estate service or company called SkyHomes">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Dream Homes
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Real Estate
+                                </li>
+                                <li>
+                                    Modern
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €45.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/foodish.webp " width="325" height="260" alt="a modern website design for a catering service called Foodish">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Foodish Catering
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Food
+                                </li>
+                                <li>
+                                    Events
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €15.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/mediCare.webp" width="325" height="260" alt="modern website landing page design for a medical company called MediCare">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Caring Hearts
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Healthcare
+                                </li>
+                                <li>
+                                    Support
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €19.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card catalog-card--disabled">
+                        <div class="catalog-card__img">
+                            <img src="images/catalog/upnews.webp" width="325" height="260" alt="UpNews company web page with sports news">
+                            <span class="label label--primary label--catalog">
+                                sold out
+                            </span>
+                        </div>
+                        <strong class="catalog-card__title">
+                            Gaming Rise
+                        </strong>
+                        <ul class="breadcrumbs">
+                            <li>
+                                eSports
+                            </li>
+                            <li>
+                                Trends
+                            </li>
+                        </ul>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €00.00 
+                            </span>
+                        </div>
+                    </article>
+                    <article class="catalog-card catalog-card--disabled">
+                        <div class="catalog-card__img">
+                            <img src="images/catalog/playcut.webp" width="325" height="260" alt="">
+                            <span class="label label--primary label--catalog">
+                                sold out
+                            </span>
+                        </div>
+                        <strong class="catalog-card__title">
+                            Edit Pro
+                        </strong>
+                        <ul class="breadcrumbs">
+                            <li>
+                                Design
+                            </li>
+                            <li>
+                                Tools
+                            </li>
+                        </ul>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €00.00 
+                            </span>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/withCash.webp" width="325" height="260" alt="">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Banking Redefined
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Finance
+                                </li>
+                                <li>
+                                    Secure
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €25.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/journeey.webp " width="325" height="260" alt="modern landing page design for a travel company called Journey">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Exploring Fun
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Travel
+                                </li>
+                                <li>
+                                    Adventure
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €41.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/ezMart.webp " width="325" height="260" alt="Admin Dashboard with tools and data">
+                                <span class="label label--blue label--catalog">
+                                    POPULAR 
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Admin Dashboard
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Data
+                                </li>
+                                <li>
+                                    Tools
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €15.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card">
+                        <a href="#" class="catalog-card__link">
+                            <div class="catalog-card__img">
+                                <img src="images/catalog/schoolHub.webp" width="325" height="260" alt="Analytical Dashboard school Hub">
+                                <span class="label label--secondary label--catalog">
+                                    new
+                                </span>
+                            </div>
+                            <strong class="catalog-card__title">
+                                Analytical Dashboard
+                            </strong>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    Data
+                                </li>
+                                <li>
+                                    Tools
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €10.99
+                            </span>
+                            <div class="catalog__btn">
+                                <a href="#" class="btn btn--transparent btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#heard"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn--primary btn--small">
+                                    <svg class="icon" width="24" height="24">
+                                        <use href="images/sprite.svg#shopping-bag"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-card catalog-card--disabled">
+                        <div class="catalog-card__img">
+                            <img src="images/catalog/kidzArt.webp" width="325" height="260" alt="web page of a kindergarten called KidzArt">
+                            <span class="label label--primary label--catalog">
+                                sold out
+                            </span>
+                        </div>
+                        <strong class="catalog-card__title">
+                            Kindergarten
+                        </strong>
+                        <ul class="breadcrumbs">
+                            <li>
+                                Education
+                            </li>
+                            <li>
+                                Kids
+                            </li>
+                        </ul>
+                        <div class="catalog-card__box">
+                            <span class="catalog-card__prices">
+                                €00.00 
+                            </span>
+                        </div>
+                    </article>
+                </div>
+                <div class="align-center">
+                    <button type="button" class="btn btn--transparent">
+                        Load more
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer__top">
+                <div class="footer__content">
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/icons/logo-big.svg" width="300" height="58" alt="Pixmart.">
+                    </a>
+                    <p>
+                        Your premium digital assets solution with high quality and comprehensive range of products and services.
+                    </p>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__col">
+                        <strong class="footer__title">
+                            Company
+                        </strong>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Homepage v1
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Homepage v2
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Homepage v3
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Blog Articles
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <strong class="footer__title">
+                            Products
+                        </strong>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Website
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Mobile App
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Social Media Feeds
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Presentation
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Product Mockups 
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Illustrations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <strong class="footer__title">
+                            Account
+                        </strong>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Your Cart
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Check Out
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Refund Policy
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Company Policy
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Send A Message 
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Customer Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="social-networks">
+                    <li>
+                        <a href="https://x.com" target="_blank">
+                            <svg class="icon" width="24" height="24">
+                                <use href="images/sprite.svg#twitter"></use>
+                            </svg>
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <svg class="icon" width="24" height="24">
+                                <use href="images/sprite.svg#facebook"></use>
+                            </svg>
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://telegram.com" target="_blank">
+                            <svg class="icon" width="24" height="24">
+                                <use href="images/sprite.svg#telegram"></use>
+                            </svg>
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <form action="#" method="post" class="email-form">
+                    <label for="email">Subscribe to Design Newsletter</label>
+                    <input type="email" id="email" placeholder="Enter your email address ..." class="email-form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <button class="btn btn--primary" type="submit">
+                        Subscribe 
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <ul class="copyright__list">
+                    <li class="copyright__item">
+                        <a href="#" class="copyright__link">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="copyright__item">
+                        <a href="#" class="copyright__link">
+                            Terms and Condition
+                        </a>
+                    </li>
+                    <li class="copyright__item">
+                        <a href="#" class="copyright__link">
+                            Site Map
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    Copyright © 2024 Pixmart. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
